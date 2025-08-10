@@ -32,18 +32,18 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="../index.html"
                   >Inicio</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Speakers</a>
+                <a class="nav-link" href="../index.html">Speakers</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Lugar y Fecha</a>
+                <a class="nav-link" href="../index.html">Lugar y Fecha</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="./contacto.html">Contacto</a>
               </li>
               <li class="nav-item dropdown">
                 <a
@@ -81,11 +81,111 @@
       </nav>
     </header>
 
-    <main>
-        
-    </main>
+    <main class="container py-5 mt-5" id="contacto">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h1 class="mb-4 text-center">📩 Contáctanos</h1>
+            <p class="text-center text-muted mb-5">
+              Si tienes alguna pregunta sobre RollingCode Conf, completa el formulario y te responderemos lo antes posible.
+            </p>
+      
+            <form>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ej: Juan Pérez" required>
+              </div>
+      
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+              </div>
+      
+              <div class="mb-3">
+                <label for="asunto" class="form-label">Asunto</label>
+                <select class="form-select" id="asunto" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="tickets">Consulta sobre Tickets</option>
+                  <option value="charlas">Información sobre charlas</option>
+                  <option value="otros">Otros</option>
+                </select>
+              </div>
+      
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+              </div>
+      
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary px-5">Enviar mensaje</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </main>
+      
 
-</footer>
+      <footer class="bg-black text-white py-5 ">
+        <div class="container">
+          <div class="row g-4 align-items-start">
+            <!-- Columna 1: Logo + copyright -->
+            <div class="col-12 col-lg-4">
+              <div class="d-flex align-items-center">
+                <!-- Reemplaza el src del logo -->
+                <img src="../assets/logo.png" alt="RollingCode logo" width="250" height="56">
+              </div>
+              <small class="d-block mt-3 text-secondary">RollingCode © 2025</small>
+            </div>
+      
+            <!-- Columna 2: Enlaces -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <ul class="list-unstyled m-0">
+                <li class="mb-2">
+                  <i class="bi bi-house-door me-2"></i>
+                  <a class="link-light text-decoration-none" href="#">Inicio</a>
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-journal-text me-2"></i>
+                  <a class="link-light text-decoration-none" href="#">Cursos</a>
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-envelope me-2"></i>
+                  <a class="link-light text-decoration-none" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+      
+            <!-- Columna 3: Contacto + redes -->
+            <div class="col-12 col-sm-6 col-lg-4">
+              <ul class="list-unstyled m-0">
+                <li class="mb-2">
+                  <i class="bi bi-envelope me-2"></i>
+                  <a class="link-light text-decoration-none" href="mailto:academy@rollingcodeschool.com">
+                    academy@rollingcodeschool.com
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <i class="bi bi-whatsapp me-2"></i>
+                  <a class="link-light text-decoration-none" href="https://wa.me/543815783030" target="_blank" rel="noopener">
+                    +54 381 578-3030
+                  </a>
+                </li>
+                <li class="mb-3">
+                  <i class="bi bi-geo-alt me-2"></i>
+                  <span>General Paz 576, Piso 9, Oficina 2<br>San Miguel de Tucumán</span>
+                </li>
+              </ul>
+      
+              <hr class="border-secondary my-3">
+      
+              <div class="d-flex align-items-center gap-3 fs-5">
+                <a class="link-light" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a class="link-light" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a class="link-light" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     
 
 <script
