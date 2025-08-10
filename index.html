@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Página Bootstrap</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">RollingCode Conf</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Speakers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lugar y Fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Tickets
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Comprar</a></li>
+                  <li><a class="dropdown-item" href="#">Canjear Cupón</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Ayuda</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar charla"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+        data-bs-pause="false"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/carousel_1.jpg"
+              class="d-block w-100"
+              alt="imagen 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/carousel_2.jpg"
+              class="d-block w-100"
+              alt="imagen 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/carousel_3.jpg"
+              class="d-block w-100 h-100"
+              alt="imagen 3"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="speakers" class="container mb-3">
+        <div class="row my-3 text-center">
+          <div class="col">
+            <h3>Speakers</h3>
+            <small>Conoce los autores de las charlas</small>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./assets/Camila Gonella.jpg"
+                class="card-img-top"
+                alt="camila"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Camila Gomez</h5>
+                <span class="badge rounded-pill text-bg-success mb-1"
+                  >Games</span
+                >
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./assets/Julio Forni.png"
+                class="card-img-top"
+                alt="camila"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Julio Forni</h5>
+                <span class="badge rounded-pill text-bg-dark mb-2"
+                  >Backend</span
+                >
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="lugar-fecha" class="container-fluid my-3">
+        <div class="row">
+          <div class="col text-center">
+            <h3>Lugar y Fecha</h3>
+            <small>Conoce dónde y cuándo es la conferencia</small>
+          </div>
+        </div>
+        <div class="row pt-3">
+          <div class="col p-0">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img
+                    src="./assets/01-lugar.jpg"
+                    class="img-fluid rounded-start"
+                    alt="lugar"
+                  />
+                </div>
+                <div class="col-md-8 bg-dark text-white">
+                  <div class="card-body">
+                    <h5 class="card-title">Site RollingCode</h5>
+                    <p class="card-text">
+                      This is a wider card with supporting text below as a
+                      natural lead-in to additional content. This content is a
+                      little bit longer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+.carousel-item {
+  height: 100vh;
+  & img {
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+  }
+}
+
+#speakers .card img {
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media (min-width: 768px) {
+  #speakers .card img {
+    object-position: center;
+  }
+}
