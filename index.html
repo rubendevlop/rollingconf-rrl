@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
   </head>
   <body>
     <header class="fixed-top">
@@ -195,7 +196,71 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <!-- siempre se quede abajo aunque haya poco contenido fixed-bottom -->
+    <footer class="bg-black text-white py-5 fixed-bottom">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <!-- Columna 1: Logo + copyright -->
+          <div class="col-12 col-lg-4">
+            <div class="d-flex align-items-center">
+              <!-- Reemplaza el src del logo -->
+              <img src="./assets/logo.png" alt="RollingCode logo" width="250" height="56">
+            </div>
+            <small class="d-block mt-3 text-secondary">RollingCode © 2025</small>
+          </div>
+    
+          <!-- Columna 2: Enlaces -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <ul class="list-unstyled m-0">
+              <li class="mb-2">
+                <i class="bi bi-house-door me-2"></i>
+                <a class="link-light text-decoration-none" href="#">Inicio</a>
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-journal-text me-2"></i>
+                <a class="link-light text-decoration-none" href="#">Cursos</a>
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-envelope me-2"></i>
+                <a class="link-light text-decoration-none" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+    
+          <!-- Columna 3: Contacto + redes -->
+          <div class="col-12 col-sm-6 col-lg-4">
+            <ul class="list-unstyled m-0">
+              <li class="mb-2">
+                <i class="bi bi-envelope me-2"></i>
+                <a class="link-light text-decoration-none" href="mailto:academy@rollingcodeschool.com">
+                  academy@rollingcodeschool.com
+                </a>
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-whatsapp me-2"></i>
+                <a class="link-light text-decoration-none" href="https://wa.me/543815783030" target="_blank" rel="noopener">
+                  +54 381 578-3030
+                </a>
+              </li>
+              <li class="mb-3">
+                <i class="bi bi-geo-alt me-2"></i>
+                <span>General Paz 576, Piso 9, Oficina 2<br>San Miguel de Tucumán</span>
+              </li>
+            </ul>
+    
+            <hr class="border-secondary my-3">
+    
+            <div class="d-flex align-items-center gap-3 fs-5">
+              <a class="link-light" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a class="link-light" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a class="link-light" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
